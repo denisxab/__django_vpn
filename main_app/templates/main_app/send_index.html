@@ -1,0 +1,14 @@
+{% extends "main_app/index_main.html" %}
+
+{% block DATA %}
+{{ block.super }}
+<form action="" method="post">
+    {% csrf_token %}
+    <label>Введите сообщение</label><br>
+    <label> <input type="text" name="SendUserNameInputText" placeholder="Ваше имя"/></label>
+    <label> <input type="text" name="GetUserNameInputText" placeholder="Имя получателя"/></label>
+    <label> <input type="text" name="MessageInputText" placeholder="Сообщение"/></label>
+    <br>
+    <input type="submit" value="Отправить"/><br>
+</form>
+{% endblock DATA %}

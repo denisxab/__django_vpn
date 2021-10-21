@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Привет авантюрист</h1> <br>
+
+<a href="{% url 'get_index' %}">Получить данные</a>
+<a href="{% url 'send_index' %}">Отправить данные</a>
+<br><br>
+
+{% block DATA %}
+{% endblock DATA %}
+
+</body>
+</html>
